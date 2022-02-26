@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Guitar Learning</title>
+</head>
+<body>
+   <script>
+      console.log('Starting js'); //console.log(x);
+
+      let guitarChord = ['Am','A','C','Em','E','D','Dm'];
+      timer = setInterval(function(){
+         rndInt = Math.floor(Math.random() * guitarChord.length);
+         chord = guitarChord[rndInt];
+         getGuitarChord(chord);
+         console.log('['+rndInt+'] '+chord);
+      },5000);
+      function getGuitarChord(chord) {
+         document.getElementById('chord-now').innerHTML = chord; 
+      }
+   </script>
+   <div class="learning" style="text-align:center; padding:50px 0; background-color:aliceblue;">
+      <h1 id="guitar-heading" style="color:rgb(90, 9, 167);">Guitar learning</h1>
+      <h1 id="chord-now" style="font-size:10em; margin-top:50px; color:rgb(9, 148, 158)">Am</h1>
+   </div>
+</body>
+</html>
