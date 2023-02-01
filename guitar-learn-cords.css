@@ -1,3 +1,5 @@
-.learning { text-align:center; padding:50px 0; background-color:aliceblue }
+#chord-main { background-color:aliceblue; }
+.learning { text-align:center; padding:50px 0;margin-top:3em; }
 #guitar-heading { color:rgb(90, 9, 167); }
 #chord-now { font-size:10em; margin-top:50px; color:rgb(9, 148, 158); }
+#chord-lines { font-size:1.5em; }
